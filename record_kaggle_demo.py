@@ -131,7 +131,7 @@ def make_browser_scene(item, index, total, stage, progress=0.0):
     draw.text((68, 157), "Solar panel image classifier", font=font(29, True), fill=COLORS["ink"])
     draw.text((70, 197), "Inspect the image and follow its live upload to the Flask API.", font=font(15), fill=COLORS["muted"])
  
-    image = item["preview"]
+    image = item["preview"] 
     canvas.paste(image, (68, 239))
     draw = ImageDraw.Draw(canvas)
     round_rect(draw, (68, 595, 617, 644), 12, COLORS["white"], COLORS["line"])
