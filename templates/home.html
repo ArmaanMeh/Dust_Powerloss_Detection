@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solar Dust Detector</title>
+  <style>
+    :root { color-scheme: light; font-family: "Segoe UI", sans-serif; color: #172b36; background: #f3f7f5; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; }
+    header { height: 76px; padding: 0 max(7vw, 28px); display: flex; align-items: center; justify-content: space-between; background: #fff; border-bottom: 1px solid #e4ece7; } 
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: .01em; }
+    .brand-icon { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 12px; color: #fff; background: #147d59; font-size: 20px; }
+    .status { color: #417263; font-size: 13px; } 
+    main { max-width: 1080px; margin: 54px auto; padding: 0 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+    .eyebrow { color: #16805b; text-transform: uppercase; letter-spacing: .13em; font-size: 12px; font-weight: 700; }
+    h1 { max-width: 460px; margin: 16px 0; font-size: clamp(36px, 4vw, 52px); line-height: 1.08; letter-spacing: -.04em; }
+    .intro { max-width: 450px; color: #64777b; font-size: 17px; line-height: 1.7; }
+    .steps { display: flex; gap: 24px; margin-top: 32px; color: #5c7375; font-size: 13px; }
+    .steps span::before { content: "✓"; color: #16805b; margin-right: 7px; font-weight: 700; } 
+    .card { padding: 30px; background: #fff; border: 1px solid #e2ebe5; border-radius: 20px; box-shadow: 0 18px 55px #1f46300c; }
+    .card h2 { margin: 0 0 7px; font-size: 21px; } 
+    .muted { margin: 0 0 22px; color: #708184; font-size: 14px; }
+    .drop { min-height: 190px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 9px; padding: 20px; border: 1.5px dashed #a9cbb8; border-radius: 15px; background: #f8fbf9; text-align: center; }
+    .upload-icon { color: #16805b; font-size: 34px; } 
+    .drop strong { font-size: 15px; }
+    .drop small { color: #829092; font-size: 12px; }
+    input[type=file] { max-width: 100%; margin-top: 9px; color: #607274; font-size: 12px; }
+    button { width: 100%; margin-top: 19px; padding: 14px 18px; border: 0; border-radius: 11px; background: #147d59; color: #fff; font: inherit; font-weight: 700; cursor: pointer; } 
+    button:hover { background: #0f6849; }
+    .footnote { margin: 14px 0 0; text-align: center; color: #849193; font-size: 12px; }
+    @media (max-width: 760px) { main { grid-template-columns: 1fr; gap: 32px; margin-top: 35px; } .steps { flex-wrap: wrap; } }
+  </style>
+</head> 
+<body>
+  <header>
+    <div class="brand"><span class="brand-icon">☼</span> Solar Dust Detector</div>
+    <span class="status">● &nbsp;Classification API ready</span>
+  </header>
+  <main> 
+    <section> 
+      <div class="eyebrow">Solar panel inspection</div>
+      <h1>See the dust.<br>Protect the power.</h1> 
+      <p class="intro">Upload a panel image and the MobileNet model will classify its surface as clean or dusty.</p>
+      <div class="steps"><span>Choose an image</span><span>Run the model</span><span>Review the result</span></div>
+    </section> 
+    <section class="card"> 
+      <h2>Classify a panel</h2>
+      <p class="muted">Select a solar panel photo to begin.</p>
+      <form action="/predict" method="post" enctype="multipart/form-data">
+        <label class="drop">
+          <span class="upload-icon">↑</span> 
+          <strong>Choose an image from your device</strong>
+          <small>JPG, JPEG, or PNG</small>
+          <input type="file" name="file" accept="image/*" required> 
+        </label>
+        <button type="submit">Analyze image &nbsp; →</button> 
+      </form> 
+      <p class="footnote">Image classification runs locally on this Flask app.</p> 
+    </section>
+  </main> 
+</body>
+</html>
