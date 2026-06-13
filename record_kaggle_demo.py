@@ -251,7 +251,7 @@ def main():
     def write_scene(scene, duration):
         nonlocal written
         base_frame = cv2.cvtColor(np.asarray(scene), cv2.COLOR_RGB2BGR)
-        for _ in range(round(duration * FPS)):
+        for _ in range(round(duration * FPS)): 
             video_frame = base_frame.copy()
             cv2.rectangle(video_frame, (0, HEIGHT - 5), (WIDTH, HEIGHT), (230, 238, 232), -1)
             bar_width = int(WIDTH * (written + 1) / frame_total)
