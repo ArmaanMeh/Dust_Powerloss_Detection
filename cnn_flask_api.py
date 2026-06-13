@@ -28,7 +28,7 @@ def index():
 def predict():
     file = flask.request.files.get("file")
     if file is None or not file.filename: 
-        flask.abort(400, description="Choose an image file to classify.") 
+        flask.abort(400, description="Choose an image file to classify.")
  
     img = cv2.imdecode(np.frombuffer(file.read(), dtype=np.uint8), cv2.IMREAD_COLOR)
     if img is None: 
