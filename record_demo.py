@@ -53,7 +53,7 @@ def classify(path):
 
 
 def centered(draw, text, y, text_font, fill, width=WIDTH):
-    bounds = draw.textbbox((0, 0), text, font=text_font) 
+    bounds = draw.textbbox((0, 0), text, font=text_font)
     draw.text(((width - (bounds[2] - bounds[0])) / 2, y), text, font=text_font, fill=fill)
 
 
