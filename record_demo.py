@@ -181,7 +181,7 @@ def main():
     DUSTY = classify(dusty_path)
  
     writer = cv2.VideoWriter(
-        str(OUTPUT),
+        str(OUTPUT), 
         cv2.VideoWriter_fourcc(*"mp4v"),
         FPS,
         (WIDTH, HEIGHT), 
