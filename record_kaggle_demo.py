@@ -142,7 +142,7 @@ def make_browser_scene(item, index, total, stage, progress=0.0):
     round_rect(draw, (panel_x, 143, 1212, 644), 20, COLORS["white"], COLORS["line"], 2)
     draw.text((panel_x + 29, 165), "Classify a panel", font=font(23, True), fill=COLORS["ink"])
     draw.text((panel_x + 30, 199), "Upload one image to check its surface condition.", font=font(14), fill=COLORS["muted"])
-
+ 
     round_rect(draw, (panel_x + 29, 235, 1181, 365), 14, "#F8FBF9", "#A9CBB8" if stage == "selected" else COLORS["line"], 2)
     if stage == "selected":
         draw.ellipse((panel_x + 53, 267, panel_x + 89, 303), fill=COLORS["green_light"])
