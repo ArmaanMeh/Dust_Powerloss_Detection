@@ -30,7 +30,7 @@ def predict():
     if file is None or not file.filename: 
         flask.abort(400, description="Choose an image file to classify.")
  
-    img = cv2.imdecode(np.frombuffer(file.read(), dtype=np.uint8), cv2.IMREAD_COLOR)
+    img = cv2.imdecode(np.frombuffer(file.read(), dtype=np.uint8), cv2.IMREAD_COLOR) 
     if img is None: 
         flask.abort(400, description="The uploaded file is not a readable image.")
 
