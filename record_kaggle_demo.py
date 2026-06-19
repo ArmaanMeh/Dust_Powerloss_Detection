@@ -198,7 +198,7 @@ def make_browser_scene(item, index, total, stage, progress=0.0):
 
     draw.text((70, 675), ATTRIBUTION, font=font(11), fill=COLORS["muted"])
     return canvas
-
+ 
 
 def make_outro(items):
     canvas = Image.new("RGB", (WIDTH, HEIGHT), COLORS["dark"])
