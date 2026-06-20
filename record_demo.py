@@ -64,7 +64,7 @@ def rounded(draw, box, radius, fill, outline=None, width=1):
 def make_image(path):
     image = Image.open(path).convert("RGB")
     return ImageOps.fit(image, (490, 310), method=Image.Resampling.LANCZOS)
-
+ 
 
 def frame(kind, item=None, progress=0.0):
     canvas = Image.new("RGB", (WIDTH, HEIGHT), COLORS["bg"]) 
