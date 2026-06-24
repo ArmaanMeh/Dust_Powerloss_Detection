@@ -295,7 +295,7 @@ def main():
 
         write_scene(make_outro(items), 6)
     finally:
-        writer.release()
+        writer.release() 
 
     print(f"Saved: {OUTPUT}")
     print(f"Duration: {written / FPS:.2f} seconds ({written} frames at {FPS} fps)")
