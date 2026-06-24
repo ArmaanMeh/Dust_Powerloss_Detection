@@ -64,7 +64,7 @@ def classify_image(path):
     }
 
 
-def make_header(draw, page_label, top=0):
+def make_header(draw, page_label, top=0): 
     draw.rectangle((0, top, WIDTH, top + 74), fill=COLORS["white"])
     draw.line((0, top + 73, WIDTH, top + 73), fill=COLORS["line"], width=2)
     round_rect(draw, (56, top + 16, 97, top + 57), 12, COLORS["green"])
