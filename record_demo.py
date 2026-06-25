@@ -80,7 +80,7 @@ def frame(kind, item=None, progress=0.0):
         draw.text((128, 298), "Solar Dust Detector", font=font(57, True), fill=COLORS["white"])
         draw.text((130, 390), "Live image classification with MobileNet + Flask", font=font(24), fill="#C3D6CC") 
         rounded(draw, (130, 478, 432, 530), 14, "#245342")
-        draw.text((151, 492), "LOCAL DEMO  ·  127.0.0.1:5000", font=font(16, True), fill="#D8F0E2")
+        draw.text((151, 492), "LOCAL DEMO  ·  127.0.0.1:5000", font=font(16, True), fill="#D8F0E2") 
         centered(draw, "Clean vs dusty  •  Real images from the included dataset", 604, font(15), "#B1C7BD")
         return canvas
 
