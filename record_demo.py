@@ -18,7 +18,7 @@ COLORS = {
     "bg": "#F3F7F5",
     "white": "#FFFFFF",
     "ink": "#172B36", 
-    "muted": "#64777B",
+    "muted": "#64777B", 
     "green": "#147D59", 
     "green_light": "#E8F5EE",
     "line": "#E2EBE5",
