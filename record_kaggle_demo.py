@@ -46,7 +46,7 @@ def round_rect(draw, box, radius, fill, outline=None, width=1):
 def classify_image(path):
     with path.open("rb") as uploaded:
         response = requests.post(
-            f"{BASE_URL}/predict",
+            f"{BASE_URL}/predict", 
             files={"file": (path.name, uploaded, "image/jpeg")},
             timeout=90,
         ) 
