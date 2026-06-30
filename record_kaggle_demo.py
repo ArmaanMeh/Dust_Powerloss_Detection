@@ -99,7 +99,7 @@ def make_overview(bird_count, dusty_count):
     draw.text((75, 158), "Watch each prediction", font=font(40, True), fill=COLORS["ink"])
     draw.text((77, 218), "Select a sample, send it to Flask, wait for MobileNet, and see the result.", font=font(18), fill=COLORS["muted"])
 
-    for x, category, count, color, tint in (
+    for x, category, count, color, tint in ( 
         (75, "Bird-drop", bird_count, COLORS["amber"], COLORS["amber_light"]),
         (660, "Dusty", dusty_count, COLORS["green"], COLORS["green_light"]),
     ):
