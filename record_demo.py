@@ -162,7 +162,7 @@ def frame(kind, item=None, progress=0.0):
         tint = COLORS["amber_light"] if is_dusty else COLORS["green_light"]
         draw.text((650, 379), "CLASSIFICATION RESULT", font=font(13, True), fill=accent)
         draw.text((650, 407), f"{item['label']} panel", font=font(37, True), fill=COLORS["ink"])
-        rounded(draw, (650, 468, 1155, 531), 12, tint)
+        rounded(draw, (650, 468, 1155, 531), 12, tint) 
         draw.text((671, 485), "Dust score", font=font(15), fill=COLORS["muted"])
         draw.text((1035, 480), f"{item['score']:.1f}%", font=font(22, True), fill=accent) 
         rounded(draw, (650, 551, 1155, 613), 12, "#F7FAF8", COLORS["line"])
