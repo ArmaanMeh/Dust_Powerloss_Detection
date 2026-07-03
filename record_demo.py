@@ -217,5 +217,5 @@ def main():
     print(f"File size: {OUTPUT.stat().st_size} bytes")
 
 
-if __name__ == "__main__": 
+if __name__ == "__main__":
     main()
