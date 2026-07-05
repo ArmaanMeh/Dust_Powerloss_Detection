@@ -18,7 +18,7 @@ model = load_model(
     custom_objects={"DepthwiseConv2D": CompatDepthwiseConv2D}, 
 )
 app = flask.Flask(__name__) 
-
+ 
 @app.route("/")
 def index(): 
     # Render the home page template with the image upload form
