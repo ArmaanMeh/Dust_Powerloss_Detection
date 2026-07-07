@@ -176,7 +176,7 @@ def make_browser_scene(item, index, total, stage, progress=0.0):
         "selected": "Analyze image   →",
         "upload": "Uploading image…",
         "processing": "Analyzing image with MobileNet…", 
-        "result": f"Result: {item.get('prediction', 'Clean or Dusty')}", 
+        "result": f"Result: {item.get('prediction', 'Clean or Dusty')}",
     }[stage] 
     centered(draw, button_text, 398, font(16, True), COLORS["white"], width=panel_x + 1212)
 
