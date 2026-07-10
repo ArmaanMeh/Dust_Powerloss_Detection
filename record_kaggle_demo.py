@@ -284,7 +284,7 @@ def main():
                 while process_frame < minimum_processing_frames or not prediction.done():
                     progress = process_frame / FPS
                     write_scene(
-                        make_browser_scene(item, index, len(paths), "processing", progress),
+                        make_browser_scene(item, index, len(paths), "processing", progress), 
                         1 / FPS,
                     )
                     process_frame += 1
