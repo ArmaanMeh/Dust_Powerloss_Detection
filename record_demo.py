@@ -9,7 +9,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageOps
 
 ROOT = Path(__file__).resolve().parent
 BASE_URL = "http://127.0.0.1:5000"
-OUTPUT = ROOT / "Solar_Dust_Classification_Demo.mp4"
+OUTPUT = ROOT / "Solar_Dust_Classification_Demo.mp4" 
 WIDTH, HEIGHT, FPS = 1280, 720, 24
 FONT_DIR = Path(r"C:\Windows\Fonts")
 FONT_REGULAR = str(FONT_DIR / "segoeui.ttf")
