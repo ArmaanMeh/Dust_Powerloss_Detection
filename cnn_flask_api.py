@@ -37,7 +37,7 @@ def predict():
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     img = cv2.resize(img, (224, 224))
  
-    x = image.img_to_array(img) 
+    x = image.img_to_array(img)
     x = np.expand_dims(x, axis=0) 
     x = x / 255 
 
