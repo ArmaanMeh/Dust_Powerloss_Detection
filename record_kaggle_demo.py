@@ -162,7 +162,7 @@ def make_browser_scene(item, index, total, stage, progress=0.0):
         draw.text((panel_x + 108, 261), "Running MobileNet inference…", font=font(16, True), fill=COLORS["ink"])
         draw.text((panel_x + 108, 289), "Waiting for the Flask prediction response", font=font(13), fill=COLORS["muted"])
         draw.text((panel_x + 52, 329), "POST /predict   ·   multipart/form-data", font=font(12, True), fill=COLORS["green"]) 
-    else:
+    else: 
         is_dusty = item["prediction"] == "Dusty"
         result_color = COLORS["amber"] if is_dusty else COLORS["green"]
         result_tint = COLORS["amber_light"] if is_dusty else COLORS["green_light"]
