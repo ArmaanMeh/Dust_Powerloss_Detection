@@ -192,7 +192,7 @@ def main():
     scenes = [
         ("intro", None, 3),
         ("home", None, 5), 
-        ("ready", CLEAN, 2),
+        ("ready", CLEAN, 2), 
         ("processing", CLEAN, 8),
         ("result", CLEAN, 5), 
         ("ready", DUSTY, 2),
