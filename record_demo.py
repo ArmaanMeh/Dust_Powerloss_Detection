@@ -174,7 +174,7 @@ def frame(kind, item=None, progress=0.0):
 def main():
     home = requests.get(f"{BASE_URL}/", timeout=10)
     home.raise_for_status()
-    global CLEAN, DUSTY
+    global CLEAN, DUSTY 
     clean_path = ROOT / "Detect_Solar_dust" / "clean-20260925T100043Z-1-001" / "clean" / "20210917_151202.jpg"
     dusty_path = ROOT / "Detect_Solar_dust" / "dirty-20260925T100044Z-1-001" / "dirty" / "20210916_094041.jpg" 
     CLEAN = classify(clean_path) 
