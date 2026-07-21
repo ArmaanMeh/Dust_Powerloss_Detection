@@ -48,7 +48,7 @@ def classify_image(path):
         response = requests.post(
             f"{BASE_URL}/predict", 
             files={"file": (path.name, uploaded, "image/jpeg")},
-            timeout=90,
+            timeout=90, 
         ) 
     response.raise_for_status() 
     label = re.search(r"<h1>(Clean|Dusty) panel</h1>", response.text)
