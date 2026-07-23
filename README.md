@@ -38,7 +38,7 @@ This makes the repository useful both as a study project and as a starting point
 
 The project contains a set of Jupyter notebooks and one Flask API script.
 
-- `Solar Panel Dust Detection Notebook.ipynb`  
+- `Solar Panel Dust Detection Notebook.ipynb` 
   Main research notebook that introduces the project, loads the dataset, performs EDA, and explores the full dust detection workflow.
 
 - `Feature Engineering.ipynb`  
