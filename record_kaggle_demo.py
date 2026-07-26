@@ -263,7 +263,7 @@ def main():
     try: 
         write_scene(make_intro(), 4) 
         write_scene(make_overview( 
-            sum(path.parent.name == "Bird-drop" for path in paths),
+            sum(path.parent.name == "Bird-drop" for path in paths), 
             sum(path.parent.name == "Dusty" for path in paths),
         ), 5)
 
