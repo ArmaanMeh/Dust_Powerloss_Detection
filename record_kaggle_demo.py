@@ -272,7 +272,7 @@ def main():
                 preview = Image.open(path).convert("RGB")
                 preview = ImageOps.fit(preview, (549, 340), method=Image.Resampling.LANCZOS)
                 item = {"path": path, "category": path.parent.name, "preview": preview}
-
+ 
                 write_scene(make_browser_scene(item, index, len(paths), "selected"), 2) 
                 for upload_frame in range(FPS):
                     progress = (upload_frame + 1) / FPS
