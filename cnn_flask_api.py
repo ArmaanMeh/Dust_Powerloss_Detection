@@ -51,6 +51,6 @@ def predict():
         dust_score=dust_score,
         filename=file.filename,
     ) 
-
+ 
 if __name__ == "__main__":
     app.run(debug=True)
