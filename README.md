@@ -154,7 +154,7 @@ This is especially relevant for:
 
 ## Requirements
 
-Use a Python environment with the packages below installed.
+Use a Python environment with the packages below installed. 
 
 ```bash
 python --version
