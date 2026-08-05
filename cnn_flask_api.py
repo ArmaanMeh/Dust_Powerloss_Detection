@@ -16,7 +16,7 @@ model = load_model(
     "Models/Mobilenet.h5",
     compile=False,
     custom_objects={"DepthwiseConv2D": CompatDepthwiseConv2D}, 
-)
+) 
 app = flask.Flask(__name__) 
  
 @app.route("/")
