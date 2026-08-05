@@ -146,7 +146,7 @@ def make_browser_scene(item, index, total, stage, progress=0.0):
     round_rect(draw, (panel_x + 29, 235, 1181, 365), 14, "#F8FBF9", "#A9CBB8" if stage == "selected" else COLORS["line"], 2)
     if stage == "selected":
         draw.ellipse((panel_x + 53, 267, panel_x + 89, 303), fill=COLORS["green_light"])
-        draw.text((panel_x + 63, 269), "✓", font=font(24, True), fill=COLORS["green"])
+        draw.text((panel_x + 63, 269), "✓", font=font(24, True), fill=COLORS["green"]) 
         draw.text((panel_x + 103, 259), "Image selected", font=font(16, True), fill=COLORS["ink"])
         draw.text((panel_x + 103, 286), item["path"].name, font=font(13), fill=COLORS["muted"])
         draw.text((panel_x + 53, 328), "JPG image ready to upload", font=font(12), fill=COLORS["muted"])
