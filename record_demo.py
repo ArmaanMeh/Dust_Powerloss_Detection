@@ -48,7 +48,7 @@ def classify(path):
         "file": path,
         "label": label_match.group(1),
         "score": float(score_match.group(1)),
-        "status": response.status_code,
+        "status": response.status_code, 
     }
 
 
