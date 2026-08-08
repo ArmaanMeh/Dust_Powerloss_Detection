@@ -254,7 +254,7 @@ def main():
         for _ in range(round(duration * FPS)): 
             video_frame = base_frame.copy()
             cv2.rectangle(video_frame, (0, HEIGHT - 5), (WIDTH, HEIGHT), (230, 238, 232), -1)
-            bar_width = int(WIDTH * (written + 1) / frame_total)
+            bar_width = int(WIDTH * (written + 1) / frame_total) 
             cv2.rectangle(video_frame, (0, HEIGHT - 5), (bar_width, HEIGHT), (89, 125, 20), -1)
             writer.write(video_frame)
             written += 1
