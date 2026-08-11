@@ -17,7 +17,7 @@ REGULAR = r"C:\Windows\Fonts\segoeui.ttf"
 BOLD = r"C:\Windows\Fonts\segoeuib.ttf"
 COLORS = {
     "background": "#F3F7F5",
-    "white": "#FFFFFF",
+    "white": "#FFFFFF", 
     "ink": "#172B36",
     "muted": "#64777B",
     "green": "#147D59",
