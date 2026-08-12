@@ -14,7 +14,7 @@ class CompatDepthwiseConv2D(tf.keras.layers.DepthwiseConv2D):
 
 model = load_model(
     "Models/Mobilenet.h5",
-    compile=False,
+    compile=False, 
     custom_objects={"DepthwiseConv2D": CompatDepthwiseConv2D}, 
 ) 
 app = flask.Flask(__name__) 
