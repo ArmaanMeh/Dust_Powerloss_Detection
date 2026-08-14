@@ -43,7 +43,7 @@ def classify(path):
     label_match = re.search(r"<h1>(Clean|Dusty) panel</h1>", response.text)
     score_match = re.search(r"<strong>([0-9.]+)%</strong>", response.text)
     if not label_match or not score_match:
-        raise RuntimeError(f"Unexpected classification page returned for {path.name}")
+        raise RuntimeError(f"Unexpected classification page returned for {path.name}") 
     return {
         "file": path,
         "label": label_match.group(1),
