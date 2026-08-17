@@ -40,7 +40,7 @@ def predict():
     x = image.img_to_array(img)
     x = np.expand_dims(x, axis=0) 
     x = x / 255 
-
+ 
     predictions = model.predict(x, verbose=0)
     dust_score = float(predictions[0][0]) 
     label = "Dusty" if dust_score > 0.5 else "Clean"
