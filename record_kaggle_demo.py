@@ -193,7 +193,7 @@ def make_browser_scene(item, index, total, stage, progress=0.0):
     else:
         draw.text((panel_x + 31, 471), "MODEL", font=font(11, True), fill=COLORS["muted"])
         draw.text((panel_x + 31, 491), "MobileNet · binary Clean / Dusty classifier", font=font(14, True), fill=COLORS["ink"]) 
-        draw.text((panel_x + 31, 526), "API endpoint", font=font(11, True), fill=COLORS["muted"])
+        draw.text((panel_x + 31, 526), "API endpoint", font=font(11, True), fill=COLORS["muted"]) 
         draw.text((panel_x + 31, 545), "POST  /predict", font=font(14, True), fill=COLORS["green"])
 
     draw.text((70, 675), ATTRIBUTION, font=font(11), fill=COLORS["muted"])
