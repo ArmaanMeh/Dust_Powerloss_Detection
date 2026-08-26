@@ -5,7 +5,7 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import load_model
 
-class CompatDepthwiseConv2D(tf.keras.layers.DepthwiseConv2D): 
+class CompatDepthwiseConv2D(tf.keras.layers.DepthwiseConv2D):
     def __init__(self, *args, groups=1, **kwargs):
         if groups != 1:
             raise ValueError(f"Expected groups=1 in saved model, got {groups}")
