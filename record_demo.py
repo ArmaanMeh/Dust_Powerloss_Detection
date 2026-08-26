@@ -95,7 +95,7 @@ def frame(kind, item=None, progress=0.0):
 
     if kind == "home":
         draw.text((74, 121), "SOLAR PANEL INSPECTION", font=font(13, True), fill=COLORS["green"])
-        draw.text((74, 153), "See the dust. Protect the power.", font=font(39, True), fill=COLORS["ink"]) 
+        draw.text((74, 153), "See the dust. Protect the power.", font=font(39, True), fill=COLORS["ink"])
         draw.text((76, 210), "Upload a panel image to classify it as clean or dusty.", font=font(18), fill=COLORS["muted"])
         rounded(draw, (74, 279, 1206, 645), 22, COLORS["white"], COLORS["line"], 2)
         draw.text((117, 318), "Classify a panel", font=font(26, True), fill=COLORS["ink"]) 
