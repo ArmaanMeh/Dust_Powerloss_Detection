@@ -33,7 +33,7 @@ def predict():
     img = cv2.imdecode(np.frombuffer(file.read(), dtype=np.uint8), cv2.IMREAD_COLOR) 
     if img is None: 
         flask.abort(400, description="The uploaded file is not a readable image.")
-
+ 
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     img = cv2.resize(img, (224, 224))
  
