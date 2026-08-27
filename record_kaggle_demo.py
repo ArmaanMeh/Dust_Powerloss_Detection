@@ -50,7 +50,7 @@ def classify_image(path):
             files={"file": (path.name, uploaded, "image/jpeg")},
             timeout=90, 
         ) 
-    response.raise_for_status() 
+    response.raise_for_status()
     label = re.search(r"<h1>(Clean|Dusty) panel</h1>", response.text)
     score = re.search(r"<strong>([0-9.]+)%</strong>", response.text)
     if label is None or score is None:
