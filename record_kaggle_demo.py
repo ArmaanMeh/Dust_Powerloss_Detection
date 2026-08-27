@@ -212,7 +212,7 @@ def make_outro(items):
     summary = [
         ("Bird-drop samples", sum(item["prediction"] == "Dusty" for item in bird), len(bird)),
         ("Dusty samples", sum(item["prediction"] == "Dusty" for item in dusty), len(dusty)),
-    ]
+    ] 
     for row, (label, predictions, count) in enumerate(summary): 
         y = 315 + row * 79
         round_rect(draw, (129, y, 1150, y + 59), 15, "#245342")
