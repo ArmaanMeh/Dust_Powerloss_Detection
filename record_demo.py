@@ -149,7 +149,7 @@ def frame(kind, item=None, progress=0.0):
     elif kind == "processing":
         draw.text((650, 382), "Running MobileNet inference", font=font(20, True), fill=COLORS["ink"])
         draw.text((650, 416), "Preprocess  →  predict  →  render result", font=font(15), fill=COLORS["muted"]) 
-        rounded(draw, (650, 466, 1155, 481), 7, "#E5EEE8")
+        rounded(draw, (650, 466, 1155, 481), 7, "#E5EEE8") 
         progress_width = max(18, int(505 * progress))
         rounded(draw, (650, 466, 650 + progress_width, 481), 7, COLORS["green"])
         draw.text((650, 500), f"Analyzing image  ·  {int(progress * 100)}%", font=font(15, True), fill=COLORS["green"])
