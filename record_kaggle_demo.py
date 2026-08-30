@@ -174,7 +174,7 @@ def make_browser_scene(item, index, total, stage, progress=0.0):
     round_rect(draw, (panel_x + 29, 384, 1181, 438), 12, COLORS["green"])
     button_text = {
         "selected": "Analyze image   →",
-        "upload": "Uploading image…",
+        "upload": "Uploading image…", 
         "processing": "Analyzing image with MobileNet…", 
         "result": f"Result: {item.get('prediction', 'Clean or Dusty')}",
     }[stage] 
