@@ -157,7 +157,7 @@ def make_browser_scene(item, index, total, stage, progress=0.0):
         round_rect(draw, (panel_x + 53, 324, panel_x + 53 + int(480 * progress), 337), 6, COLORS["green"]) 
     elif stage == "processing":
         draw.ellipse((panel_x + 56, 269, panel_x + 94, 307), outline="#B6D9C5", width=5)
-        start_angle = int((progress * 360) % 360)
+        start_angle = int((progress * 360) % 360) 
         draw.arc((panel_x + 56, 269, panel_x + 94, 307), start=start_angle, end=start_angle + 230, fill=COLORS["green"], width=5)
         draw.text((panel_x + 108, 261), "Running MobileNet inference…", font=font(16, True), fill=COLORS["ink"])
         draw.text((panel_x + 108, 289), "Waiting for the Flask prediction response", font=font(13), fill=COLORS["muted"])
