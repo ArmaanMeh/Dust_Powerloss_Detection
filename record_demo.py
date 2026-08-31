@@ -118,7 +118,7 @@ def frame(kind, item=None, progress=0.0):
             rounded(draw, (x, 278, x + 552, 535), 22, COLORS["white"], COLORS["line"], 2)
             draw.text((x + 30, 307), "CLEAN SAMPLE" if result["label"] == "Clean" else "DUSTY SAMPLE", font=font(13, True), fill=COLORS["green"] if result["label"] == "Clean" else COLORS["amber"])
             draw.text((x + 30, 345), result["label"], font=font(40, True), fill=COLORS["ink"])
-            draw.text((x + 30, 407), f"Dust score   {result['score']:.1f}%", font=font(19, True), fill=COLORS["green"] if result["label"] == "Clean" else COLORS["amber"])
+            draw.text((x + 30, 407), f"Dust score   {result['score']:.1f}%", font=font(19, True), fill=COLORS["green"] if result["label"] == "Clean" else COLORS["amber"]) 
             draw.text((x + 30, 456), f"POST /predict    HTTP {result['status']}", font=font(14), fill=COLORS["muted"])
         rounded(draw, (74, 579, 1206, 636), 14, COLORS["dark"])
         centered(draw, "MobileNet model  •  224 × 224 preprocessing  •  Local Flask API", 596, font(17, True), COLORS["white"]) 
