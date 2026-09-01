@@ -20,7 +20,7 @@ model = load_model(
 app = flask.Flask(__name__) 
  
 @app.route("/")
-def index(): 
+def index():
     # Render the home page template with the image upload form
     return flask.render_template("home.html") 
 
