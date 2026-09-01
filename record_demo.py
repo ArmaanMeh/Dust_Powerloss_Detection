@@ -74,7 +74,7 @@ def frame(kind, item=None, progress=0.0):
         canvas = Image.new("RGB", (WIDTH, HEIGHT), COLORS["dark"])
         draw = ImageDraw.Draw(canvas)
         rounded(draw, (80, 78, 1200, 642), 30, "#173A31", outline="#2D5849", width=2)
-        rounded(draw, (128, 135, 185, 192), 17, COLORS["green"])
+        rounded(draw, (128, 135, 185, 192), 17, COLORS["green"]) 
         draw.text((140, 137), "☼", font=font(36, True), fill=COLORS["white"])
         draw.text((128, 252), "SOLAR PANEL INSPECTION", font=font(17, True), fill="#A7D9BF")
         draw.text((128, 298), "Solar Dust Detector", font=font(57, True), fill=COLORS["white"])
