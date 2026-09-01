@@ -49,7 +49,7 @@ def predict():
         "result.html", 
         label=label,
         dust_score=dust_score,
-        filename=file.filename,
+        filename=file.filename, 
     ) 
  
 if __name__ == "__main__": 
