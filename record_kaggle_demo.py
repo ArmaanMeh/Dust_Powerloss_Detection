@@ -40,7 +40,7 @@ def centered(draw, text, y, text_font, fill, width=WIDTH):
 
  
 def round_rect(draw, box, radius, fill, outline=None, width=1):
-    draw.rounded_rectangle(box, radius=radius, fill=fill, outline=outline, width=width)
+    draw.rounded_rectangle(box, radius=radius, fill=fill, outline=outline, width=width) 
 
  
 def classify_image(path):
