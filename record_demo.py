@@ -195,7 +195,7 @@ def main():
         ("ready", CLEAN, 2), 
         ("processing", CLEAN, 8),
         ("result", CLEAN, 5), 
-        ("ready", DUSTY, 2),
+        ("ready", DUSTY, 2), 
         ("processing", DUSTY, 8), 
         ("result", DUSTY, 5),
         ("summary", None, 2),
