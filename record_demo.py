@@ -87,7 +87,7 @@ def frame(kind, item=None, progress=0.0):
     draw.rectangle((0, 0, WIDTH, 72), fill=COLORS["white"])
     draw.line((0, 71, WIDTH, 71), fill=COLORS["line"], width=2)
     rounded(draw, (58, 16, 98, 56), 12, COLORS["green"]) 
-    draw.text((68, 18), "☼", font=font(27, True), fill=COLORS["white"])
+    draw.text((68, 18), "☼", font=font(27, True), fill=COLORS["white"]) 
     draw.text((112, 22), "Solar Dust Detector", font=font(19, True), fill=COLORS["ink"])
     rounded(draw, (958, 21, 1224, 51), 15, COLORS["green_light"])
     draw.ellipse((975, 31, 984, 40), fill=COLORS["green"])
