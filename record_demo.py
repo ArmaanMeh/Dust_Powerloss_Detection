@@ -202,7 +202,7 @@ def main():
     ]
     try: 
         for kind, item, duration in scenes: 
-            frame_count = duration * FPS
+            frame_count = duration * FPS 
             for index in range(frame_count):
                 progress = (index + 1) / frame_count if kind == "processing" else 0
                 image = frame(kind, item, progress)
