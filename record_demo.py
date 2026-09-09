@@ -190,7 +190,7 @@ def main():
         raise RuntimeError(f"Could not open MP4 video writer for {OUTPUT}")
 
     scenes = [
-        ("intro", None, 3),
+        ("intro", None, 3), 
         ("home", None, 5), 
         ("ready", CLEAN, 2), 
         ("processing", CLEAN, 8),
