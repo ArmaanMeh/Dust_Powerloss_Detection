@@ -46,7 +46,7 @@ def predict():
     label = "Dusty" if dust_score > 0.5 else "Clean"
 
     return flask.render_template( 
-        "result.html", 
+        "result.html",
         label=label,
         dust_score=dust_score,
         filename=file.filename, 
