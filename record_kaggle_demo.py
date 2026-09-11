@@ -153,7 +153,7 @@ def make_browser_scene(item, index, total, stage, progress=0.0):
     elif stage == "upload":
         draw.text((panel_x + 52, 256), "Uploading selected image…", font=font(17, True), fill=COLORS["ink"])
         draw.text((panel_x + 53, 286), item["path"].name, font=font(13), fill=COLORS["muted"])
-        round_rect(draw, (panel_x + 53, 324, panel_x + 533, 337), 6, "#E5EEE8") 
+        round_rect(draw, (panel_x + 53, 324, panel_x + 533, 337), 6, "#E5EEE8")
         round_rect(draw, (panel_x + 53, 324, panel_x + 53 + int(480 * progress), 337), 6, COLORS["green"]) 
     elif stage == "processing":
         draw.ellipse((panel_x + 56, 269, panel_x + 94, 307), outline="#B6D9C5", width=5)
