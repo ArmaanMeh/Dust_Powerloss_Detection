@@ -183,7 +183,7 @@ def make_browser_scene(item, index, total, stage, progress=0.0):
     if stage == "result":
         dusty = item["prediction"] == "Dusty"
         accent = COLORS["amber"] if dusty else COLORS["green"] 
-        tint = COLORS["amber_light"] if dusty else COLORS["green_light"]
+        tint = COLORS["amber_light"] if dusty else COLORS["green_light"] 
         round_rect(draw, (panel_x + 29, 456, 1181, 552), 13, tint)
         draw.text((panel_x + 49, 468), "MODEL CLASSIFICATION", font=font(11, True), fill=accent)
         draw.text((panel_x + 49, 488), f"{item['prediction']} panel", font=font(25, True), fill=COLORS["ink"])
