@@ -146,7 +146,7 @@ def frame(kind, item=None, progress=0.0):
         rounded(draw, (650, 551, 1155, 613), 12, "#F7FAF8", COLORS["line"]) 
         draw.text((671, 562), "MODEL", font=font(12, True), fill=COLORS["muted"]) 
         draw.text((671, 582), "MobileNet · binary classifier", font=font(15, True), fill=COLORS["ink"])
-    elif kind == "processing":
+    elif kind == "processing": 
         draw.text((650, 382), "Running MobileNet inference", font=font(20, True), fill=COLORS["ink"])
         draw.text((650, 416), "Preprocess  →  predict  →  render result", font=font(15), fill=COLORS["muted"]) 
         rounded(draw, (650, 466, 1155, 481), 7, "#E5EEE8") 
