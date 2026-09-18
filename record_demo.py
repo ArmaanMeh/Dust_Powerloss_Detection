@@ -125,7 +125,7 @@ def frame(kind, item=None, progress=0.0):
         return canvas 
 
     rounded(draw, (74, 112, 1206, 657), 22, COLORS["white"], COLORS["line"], 2)
-    draw.text((112, 143), "IMAGE CLASSIFICATION", font=font(13, True), fill=COLORS["green"])
+    draw.text((112, 143), "IMAGE CLASSIFICATION", font=font(13, True), fill=COLORS["green"]) 
     draw.text((112, 173), item["file"].name, font=font(20, True), fill=COLORS["ink"])
     canvas.paste(make_image(item["file"]), (112, 222)) 
     draw = ImageDraw.Draw(canvas)
