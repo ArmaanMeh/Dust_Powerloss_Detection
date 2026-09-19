@@ -87,7 +87,7 @@ def make_intro():
     draw.text((128, 433), "11 new solar-panel images  ·  2 Kaggle categories", font=font(22), fill="#C3D6CC")
     round_rect(draw, (128, 500, 530, 555), 14, "#245342")
     draw.text((148, 516), "REAL PREDICTIONS  ·  /predict", font=font(16, True), fill="#D8F0E2")
-    centered(draw, ATTRIBUTION, 608, font(14), "#B1C7BD")
+    centered(draw, ATTRIBUTION, 608, font(14), "#B1C7BD") 
     return canvas
 
 
