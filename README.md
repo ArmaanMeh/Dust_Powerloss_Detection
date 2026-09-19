@@ -250,7 +250,7 @@ That means you must create a `Models/` folder and save the trained model there a
 ```text
 Models/Mobilenet.h5
 ```
- 
+
 If this file is missing, the Flask application will fail to start.
 
 ---
