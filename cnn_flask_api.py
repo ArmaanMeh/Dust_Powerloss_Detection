@@ -38,7 +38,7 @@ def predict():
     img = cv2.resize(img, (224, 224))
  
     x = image.img_to_array(img)
-    x = np.expand_dims(x, axis=0)
+    x = np.expand_dims(x, axis=0) 
     x = x / 255 
  
     predictions = model.predict(x, verbose=0)
