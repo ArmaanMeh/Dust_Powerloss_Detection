@@ -48,7 +48,7 @@ def predict():
     return flask.render_template( 
         "result.html",
         label=label,
-        dust_score=dust_score,
+        dust_score=dust_score, 
         filename=file.filename, 
     ) 
  
