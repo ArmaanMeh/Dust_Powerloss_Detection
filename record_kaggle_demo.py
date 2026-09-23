@@ -265,7 +265,7 @@ def main():
         write_scene(make_overview( 
             sum(path.parent.name == "Bird-drop" for path in paths), 
             sum(path.parent.name == "Dusty" for path in paths),
-        ), 5)
+        ), 5) 
 
         with ThreadPoolExecutor(max_workers=1) as executor:
             for index, path in enumerate(paths, 1):
